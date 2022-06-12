@@ -1,5 +1,7 @@
 # 15 Patterns using Python
 
+![Python Pattern](pattern-image.jpg)
+
 ### Pattern #1
 
 ```
