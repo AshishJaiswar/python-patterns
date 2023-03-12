@@ -219,7 +219,7 @@ pattern_size = int(input("Pattern Size: "))
 for i in range(1, pattern_size + 1):
     spaces = " " * (pattern_size - i)
     stars = "* " * i
-    if  i >= 3 and i < pattern_size:
+    if  i > 2 and i < pattern_size:
         mid_spaces = len(stars) - 3
         stars = "*" + (" " * mid_spaces) + "*"
     elif i == pattern_size:
@@ -241,13 +241,13 @@ pattern_size = int(input("Pattern Size: "))
 for i in range(pattern_size, 0, -1):
     spaces = " " * (pattern_size - i)
     stars = "* " * i
-    if  i >= 3 and i < pattern_size:
-        mid_spaces = len(stars[1:-1]) - 1
+    if  i > 2 and i < pattern_size:
+        mid_spaces = len(stars) - 3
         stars = "*" + (" " * mid_spaces) + "*"
     elif i == pattern_size:
         stars = ("*" * i) + ("*" * (i - 1))
-
     print(f"{spaces}{stars}")
+    
 Output:
 *********
  *     *
